@@ -63,7 +63,49 @@ Statistics How to (2021, June 13). Monty Hall problem: Solution explained simply
 ### **The PSCO Lottery**
 #### One of the most popular major games of PCSO is the Ultra Lotto 6/58. At ₱20 per ticket, how much would a bettor spend to cover all of the possible combinations. Would the grand prize of ₱50 million cover all the expenses or it would simply incur a massive loss on the bettor?
 
-answer
+![PCSO Logo](https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.6435-9/74602780_3029414650418286_6084237558978445312_n.png?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeFxiD0eRGZjIo5xHm1JZugSW5UF5UUcNKJblQXlRRw0okZi5JSfg645-NqYxRqcR1poE0cNUo5gEh8PdOombRXR&_nc_ohc=OG6n8o3lQkMAX-wBHEM&_nc_ht=scontent.fmnl4-5.fna&oh=29f8b6de6f1efeae6d830e4fdf02678f&oe=60F48579){width=10%}
+
+The Philippine Charity Sweepstakes Office (or PCSO for short) runs a variation of the lottery with 6 numbers, all from one to fifty-eight. The rules of the PCSO are simple, if the set of numbers picked by the host matches the numbers on your ticket, you win a prize pool of money! Take note the more winners there are, the more your prize pool is split.
+
+This sounds like a lucrative to make money because of the massive prize pool and possible profit you gain from a single ticket, which costs 20 ₱. But with the lotto being the lotto, the odds are guaranteed to be stacked against everyone who participates, including you. So in this problem, we will find out just how much money it will take to have a 100% chance of finding the lucky number.
+
+A few important points about the PCSO lotto if you have never played it before:
+
+<ol>
+
+<li>Six number balls will be picked from 1 – 58 through a vacuum system, assuring unpredictability</li> 
+
+<li>Once a ball is taken out, it is removed from the pool of possible numbers</li>
+
+<li>The order of the numbers do not matter</li>
+
+</ol>
+
+These points warrant the usage of the Combination Formula:
+
+$$ _{n}C_{k}= \frac{n!}{n!(n-k)!} $$
+Where n is the total number of possible numbers (58)
+
+And k is the number of numbers being picked (6)
+
+
+This formula will help us find the total number of tickets we need to buy to guarantee a chance at winning the lottery. Inserting our known values into the formula gives us
+
+$$ _{58}C_{6}= \frac{58!}{58!(58-6)!} $$
+which is equal to: 40, 475, 358 lottery tickets. With each ticket costing 20₱, multiplying the value gained with 20 will give us the total amount of money we need to spend to guarantee a win.
+
+$$ 40, 475, 358*20₱ = 809,507,160₱$$
+
+Now that is a ton of money. With the theoretical grand prize being 
+50,000,000₱, let us see how much we will gain by buying that many tickets for that amount of money.
+
+$$ 50,000,000₱ - 809,507,160₱ = -759,507,160₱ $$
+Now I do not know about you, but this feels like a net loss of astronomical scale. 
+
+In conclusion, spending enough money to have a 100% chance of winning the lottery would incur a financial loss on the bettor, one they would never be able to recover from, even if they win the lottery three times over.
+
+The sheer amount of possible numbers in the lottery and the millions of bettors ensure its continued activities, meaning the ones running it will always make sure the odds are stacked against each individual bettor. In the off-chance that you do win the lottery, just know that you pulled of something that only happens to one in over forty million possibilities. 
+
 
 ![pictures]directory/link)
 
@@ -71,6 +113,7 @@ answer
 
 **Reference**
 
+https://www.youtube.com/watch?v=nFz1UX-bZmA
 ---
 
 ---
