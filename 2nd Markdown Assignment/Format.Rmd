@@ -1,8 +1,8 @@
 ---
-title: "First Markdown Assignment v.0.03"
+title: "Second Markdown Assignment"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -14,9 +14,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 answer
 
-![pictures](directory/link)
+```{r}
+row1<-c("a", "b", "c", "d")
+row2<-c("e", "f", "g", "h")
+row3<-c("i", "j", "k", "l")
+row4<-c("m", "n", "o", "p")
+title<-data.frame(row1, row2, row3, row4)
+title
+knitr::kable(title, "pipe", align=c("c", "c", "c", "c"))
+```
 
-Names: Justine and Sun Phil
+![pictures]directory/link)
+
+**Names: Justine and Sun Phil**
 
 **Reference**
 
@@ -27,9 +37,9 @@ Names: Justine and Sun Phil
 
 answer
 
-![pictures](directory/link)
+![pictures]directory/link)
 
-Names: Lester and Xavier
+**Names: Lester and Xavier**
 
 **Reference**
 
