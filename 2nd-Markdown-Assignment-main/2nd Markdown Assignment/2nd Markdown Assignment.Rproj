@@ -1,0 +1,38 @@
+---
+title: "First Markdown Assignment v.0.03"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### **The Monty Hall Problem**
+#### Briefly discuss the Monty Hall problem and share your insights and solution to this brain teaser problem.
+
+answer
+
+![pictures](directory/link)
+
+Names: Justine and Sun Phil
+
+**Reference**
+
+---
+
+### **The PSCO Lottery**
+#### One of the most popular major games of PCSO is the Ultra Lotto 6/58. At ₱20 per ticket, how much would a bettor spend to cover all of the possible combinations. Would the grand prize of ₱50 million cover all the expenses or it would simply incur a massive loss on the bettor?
+
+answer
+
+![pictures](directory/link)
+
+Names: Lester and Xavier
+
+**Reference**
+
+---
+
+---
