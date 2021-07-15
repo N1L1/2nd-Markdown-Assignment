@@ -1,0 +1,348 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Second Markdown Assignment},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Second Markdown Assignment}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{the-monty-hall-problem}{%
+\subsubsection{\texorpdfstring{\textbf{The Monty Hall
+Problem}}{The Monty Hall Problem}}\label{the-monty-hall-problem}}
+
+\hypertarget{briefly-discuss-the-monty-hall-problem-and-share-your-insights-and-solution-to-this-brain-teaser-problem.}{%
+\paragraph{\texorpdfstring{ Briefly discuss the Monty Hall problem and
+share your insights and solution to this brain teaser
+problem.}{ Briefly discuss the Monty Hall problem and share your insights and solution to this brain teaser problem.}}\label{briefly-discuss-the-monty-hall-problem-and-share-your-insights-and-solution-to-this-brain-teaser-problem.}}
+
+~~~~~~~~~~The \textbf{Monty Hall problem} is a probability puzzle named
+after the late Monty Hall, the original host of the TV show Let's Make a
+Deal. In this problem, there are \emph{3 doors}. Behind 1 door is
+\emph{a car}; the grand prize that the contestant can win, while behind
+the other 2 doors contain \emph{goats}. The contestant chooses a door at
+random which he or she believes is the door that contains the grand
+prize. The game host then opens one of the 2 remaining doors which
+reveals one of the goats inside. Now the contestant has the option to
+stick with his or her chosen door or switch to the other or remaining
+door to win the prize. The majority of people assume that both doors
+have the same probability to win, where the door you chose and the door
+that was left unopened have a 50/50 chance. Because there is no
+perceived reason to change, most stick with their initial choice.
+However, in terms of chances, that is not the case.
+
+\begin{figure}
+\centering
+\includegraphics{https://external-preview.redd.it/9j6tqnfWlm44g9GjPSJI29X7fbPzzc7kZKa0GvcsyM0.jpg?width=640\&crop=smart\&auto=webp\&s=62a58e68994fd8233507379ab4aafad41e84b758}
+\caption{Monty Hall Problem}
+\end{figure}
+
+~~~~~~~~~~The chances of actually winning the car is, at first,
+distributed equally among each door, meaning that each door will have a
+⅓ chance of containing the grand prize. If a contestant chooses 1 door,
+he or she will have a ⅓ chance of having the grand prize, and it would
+stay that way if he or she sticks with his or her chosen door. That
+would mean that there must be a ⅔ chance that the car is on the other 2
+doors. However, even though the host had already revealed the contents
+of the second door, the contestant would still have a ⅔ chance of
+winning the grand prize if he or she switches. The odds are better if
+you switch because the host curates the remaining choices (Statistics
+How to, 2021).
+
+\begin{figure}
+\centering
+\includegraphics{https://i0.wp.com/www.geeksaresexy.net/wp-content/uploads/2010/05/Monty_open_door_chances.svg_.png?resize=500\%2C508}
+\caption{Monty Hall Problem Probability rates}
+\end{figure}
+
+~~~~~~~~~~To better understand the concept of probability in this game,
+let us look into the answer of columnist Marilyn vos Savant in her
+magazine Parade when she was asked about the same problem. According to
+her, there is about 66\% chance (roughly ⅔) of winning the prize by
+switching (Frost, 2021). This is because there are only nine different
+combinations of choices and outcomes. Let us refer to this table:
+
+\begin{verbatim}
+##    row1 row2               row3               row4
+## 1     1    1                Win               Lose
+## 2     1    2               Lose                Win
+## 3     1    3               Lose                Win
+## 4     2    1               Lose                Win
+## 5     2    2                Win               Lose
+## 6     2    3               Lose                Win
+## 7     3    1               Lose                Win
+## 8     3    2               Lose                Win
+## 9     3    3                Win               Lose
+## 10           3 Wins (About 33%) 6 Wins (About 66%)
+\end{verbatim}
+
+\begin{longtable}[]{@{}cccc@{}}
+\toprule
+Contestant's initial door & Door with prize & Don't Switch & Switch \\
+\midrule
+\endhead
+1 & 1 & Win & Lose \\
+1 & 2 & Lose & Win \\
+1 & 3 & Lose & Win \\
+2 & 1 & Lose & Win \\
+2 & 2 & Win & Lose \\
+2 & 3 & Lose & Win \\
+3 & 1 & Lose & Win \\
+3 & 2 & Lose & Win \\
+3 & 3 & Win & Lose \\
+& & 3 Wins (About 33\%) & 6 Wins (About 66\%) \\
+\bottomrule
+\end{longtable}
+
+~~~~~~~~~~The first column contains the numbers 1, 2 and 3 which
+represent each of the doors or labels each door. Meanwhile, the second
+column represents the door that has the prize. The third and fourth
+column tells whether the contestant wins or loses the game if he or she
+either sticks with his or her first choice or switches to the other door
+respectively. By enumerating these nine different combinations of
+choices and outcomes, we now have different potential situations where
+we could analyze the probability of winning between switching and not
+switching the contestant's first choice. In the third column which
+represents the outcome if the contestant didn't switch, most of the
+result would indicate that the contestant would have a 33\% chance of
+winning if he or she sticks with his or her first choice; having a total
+of 3 wins and 6 losses considering all 9 scenarios. Meanwhile, if the
+contestant switches his or her door for the other unopened door, then he
+or she would have a bigger chance to win; having a total of 6 wins and 3
+losses considering all 9 scenarios, which gives him or her a 66\% chance
+of winning. If we compare the probabilities of winning between switching
+and not switching the door, then from the probability percentages we
+could conclude that the contestant would usually have a better chance of
+winning the prize if he or she switches his or her choice.
+
+~~~~~~~~~~~~Still not convinced that switching would give us a better
+chance of winning? Then let's try increasing the number of doors, from a
+measly 3 to a hundred. Each door would now have 1/100 chance of
+containing the prize. The contestant still picks one door, but the host
+opens 98 doors so that the contestant would have the option to either
+stick with the door he or she initially chose or switch to the other. If
+we always keep our original door, then our probability of getting the
+car is the probability we choose the door on the first try, which is
+1/100. If we choose to always switch, then our probability of ultimately
+getting the car is the probability we choose a goat times the
+probability we switch from a goat to a car. Our probability of picking a
+goat initially is clearly 99/100. Then, once we pick a goat and one goat
+door is opened, there are 98 other doors, one of which contains the
+prize. This would mean that our chance of switching from a goat door to
+a car door, or the chance of guessing correctly after switching is 1/98,
+which also demonstrates sampling without replacement.
+
+Here is the solution for solving the probability of winning the prize by
+switching:
+
+Let P(A) be the Probability of getting a goat Let P(B\textbar A) be the
+Probability of guessing correctly after switching Let P(A
+\emph{intersection} B) be the Probability of getting the prize or
+winning by switching
+
+\[ P(A)= \frac{99}{100} \] \[ P(B|A) = \frac{1}{98}\]
+\[ P(A \bigcap B) = P(A)*P(B|A) = \frac{99}{100} * \frac{1}{98} \approx 0.0101 \]
+
+~~~~~~~~~~Now let's compare that to the probability of getting the prize
+on the first try, which is 1/100 or approximately 0.01. You'll notice
+that the Probability of getting the prize or winning by switching is
+\textbf{slightly greater} than the probability of getting the prize on
+the first try of sticking with the initially chosen door (0.0101
+\textgreater{} 0.1). This would still indicate that we would usually
+have a higher chance of getting the prize if we ultimately switch from
+our first choice rather than sticking with our first choice.
+
+\textbf{Names: Justine Sison and Sun Phil Zablan}
+
+\textbf{References:}
+
+Frost, J. (2021, February 01). The monty hall problem: A statistical
+illusion. Retrieved July 15, 2021, from
+\url{https://statisticsbyjim.com/fun/monty-hall-problem/}
+
+Statistics How to (2021, June 13). Monty Hall problem: Solution
+explained simply. Retrieved July 15, 2021, from
+\url{https://www.statisticshowto.com/probability-and-statistics/monty-hall-problem/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-psco-lottery}{%
+\subsubsection{\texorpdfstring{\textbf{The PSCO
+Lottery}}{The PSCO Lottery}}\label{the-psco-lottery}}
+
+\hypertarget{one-of-the-most-popular-major-games-of-pcso-is-the-ultra-lotto-658.-at-20-per-ticket-how-much-would-a-bettor-spend-to-cover-all-of-the-possible-combinations.-would-the-grand-prize-of-50-million-cover-all-the-expenses-or-it-would-simply-incur-a-massive-loss-on-the-bettor}{%
+\paragraph{\texorpdfstring{ One of the most popular major games of PCSO
+is the Ultra Lotto 6/58. At ₱20 per ticket, how much would a bettor
+spend to cover all of the possible combinations. Would the grand prize
+of ₱50 million cover all the expenses or it would simply incur a massive
+loss on the
+bettor?}{ One of the most popular major games of PCSO is the Ultra Lotto 6/58. At ₱20 per ticket, how much would a bettor spend to cover all of the possible combinations. Would the grand prize of ₱50 million cover all the expenses or it would simply incur a massive loss on the bettor?}}\label{one-of-the-most-popular-major-games-of-pcso-is-the-ultra-lotto-658.-at-20-per-ticket-how-much-would-a-bettor-spend-to-cover-all-of-the-possible-combinations.-would-the-grand-prize-of-50-million-cover-all-the-expenses-or-it-would-simply-incur-a-massive-loss-on-the-bettor}}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.1\textwidth,height=\textheight]{https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.6435-9/74602780_3029414650418286_6084237558978445312_n.png?_nc_cat=106\&ccb=1-3\&_nc_sid=730e14\&_nc_eui2=AeFxiD0eRGZjIo5xHm1JZugSW5UF5UUcNKJblQXlRRw0okZi5JSfg645-NqYxRqcR1poE0cNUo5gEh8PdOombRXR\&_nc_ohc=OG6n8o3lQkMAX-wBHEM\&_nc_ht=scontent.fmnl4-5.fna\&oh=29f8b6de6f1efeae6d830e4fdf02678f\&oe=60F48579}
+\caption{PCSO Logo}
+\end{figure}
+
+The \textbf{PCSO Lottery Draw} is \emph{a television game show produced
+by the Philippine Charity Sweeptakes Office (PCSO)} that started airing
+since March 8, 1995 on People's Television Network Channel (PTV). The
+program consists of drawing of parimutuel and fixed payout lottery
+games, sweepstakes games such as Lotto 6/42, Mega Lotto 6/45, Super
+Lotto 6/49, Grand Lotto 6/55, Ultra Lotto 6/58, and other fixed payout
+games.
+
+The PCSO runs a variation of the lottery with 6 numbers, all from one to
+fifty-eight, which is the Ultra Lotto 6/58 event. The rules of the PCSO
+are simple, if the set of numbers picked by the host matches the numbers
+on your ticket, you win a prize pool of money! Take note the more
+winners there are, the more your prize pool is split.
+
+This sounds like a lucrative to make money because of the massive prize
+pool and possible profit you gain from a single ticket, which costs ₱20.
+But with the lotto being the lotto, the odds are guaranteed to be
+stacked against everyone who participates, including you. So in this
+problem, we will find out just how much money it will take to have a
+100\% chance of finding the lucky number.
+
+\textbf{A few important points about the PCSO lotto if you have never
+played it before:}
+
+Six number balls will be picked from 1 -- 58 through a vacuum system,
+assuring unpredictability
+
+Once a ball is taken out, it is removed from the pool of possible
+numbers
+
+The order of the numbers do not matter
+
+These points warrant the usage of the Combination Formula:
+
+\[ _{n}C_{k}= \frac{n!}{n!(n-k)!} \] Where \textbf{\emph{n}} is the
+\textbf{total number of possible numbers (58)}
+
+And \textbf{\emph{k}} is the \textbf{number of numbers being picked (6)}
+
+We will be using the \textbf{combination formula} \emph{because the
+order does not matter as long as you have the matching numbers to the
+ones the machine have picked.} This formula will help us find the total
+number of tickets we need to buy to guarantee a chance at winning the
+lottery. Inserting our known values into the formula gives us
+
+\[ _{58}C_{6}= \frac{58!}{58!(58-6)!} \] which is equal to: \textbf{40,
+475, 358 lottery tickets}. With each ticket costing ₱20, multiplying the
+value gained with 20 will give us the total amount of money we need to
+spend to guarantee a win.
+
+\[ 40, 475, 358*₱20 = ₱809,507,160\]
+
+Now that is a ton of money. With the theoretical grand prize being
+₱50,000,000, let us see how much we will gain by buying that many
+tickets for that amount of money.
+
+\[ ₱50,000,000 - ₱809,507,160 = ₱-759,507,160 \] Now I do not know about
+you, but this feels like a net loss of astronomical scale.
+
+In conclusion, spending enough money to have a 100\% chance of winning
+the lottery would incur a financial loss on the bettor, one they would
+never be able to recover from, even if they win the lottery three times
+over.
+
+The sheer amount of possible numbers in the lottery and the millions of
+bettors ensure its continued activities, meaning the ones running it
+will always make sure the odds are stacked against each individual
+bettor. In the off-chance that you do win the lottery, just know that
+you pulled of something that only happens to one in over forty million
+possibilities.
+
+\begin{figure}
+\centering
+\includegraphics{https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/djdjn-djdjndj\%C2\%B5ndjdj\%C2\%B5ndj-royalty-free-illustration-1592420083.jpg?crop=1xw:1xh;center,top\&resize=640:*}
+\caption{Little Probability}
+\end{figure}
+
+\textbf{Names: Lester Salvador and Jose Xavier Castillo}
+
+\textbf{Reference:}
+
+Niemi, J. (2020). Dr.~J's Guide to Combinations (without replacement)
+{[}Video{]}. In YouTube.
+\url{https://www.youtube.com/watch?v=nFz1UX-bZmA}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\end{document}
